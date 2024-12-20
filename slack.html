@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack Clone</title>
+     <link rel="stylesheet" href="slack.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav nav_primary_expanded">
+            <div class="nav_row nav_primary">
+                <div class="slack_logo">
+                    <a href="#">
+                        <img src="https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png" alt="Slack Logo">
+                        <div class="slack_logo_slack">
+                            slack
+                                <div class="slack_logo_from_salesforce">
+                                    from <i class="fa-sharp fa-solid fa-users"></i> salesforce
+                                </div>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav_list templates_layout">
+                    <ul class="nav_ul_level_0">
+                        <li id="nav_features" class="nav_parent nav_parent_l1">
+                            <button class="dropdown_button">
+                                <span class="nav_parent_label nav_parent_label_l1">
+                                    Features <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </button>
+                            <ul class="nav_ul_level_1">
+                                <li id="nav_features_main" class="nav_parent nav_parent_l2">
+                                    <ul class="nav_ul_level_2">
+                                        <li id="nav_features_main_top" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <!-- Column 1: Collaboration -->
+                                                <li class="nav_column">
+                                                    <div class="nav_parent_label">Collaboration</div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_channels" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Channels</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Organize teams and work
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_connect" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Slack Connect</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Work with external partners
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_messaging" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Messaging</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Chat with your team
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_huddles" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Huddles
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Meet using audio and video
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_clips" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Clips</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Record and share updates
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Column 2: Project Management -->
+                                                <li class="nav_column">
+                                                    <div class="nav_parent_label">
+                                                        Project Management
+                                                    </div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_templates" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Templates</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Start my task, fast
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_canvas" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Canvas</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Create rich, flexible docs
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_lists" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Lists</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Organize, track, and manage projects
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_search" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Search</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Seek shared knowledge
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_file_sharing" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>File Sharing</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Bring files into the flow of work
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Column 3: Integrations -->
+                                                <li class="nav_column">
+                                                    <div class="nav_parent_label">
+                                                        Integrations
+                                                    </div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_workflow" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Workflow Builders</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Automate everyday tasks
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_integrations" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Apps and Integrations</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Connect your tools with Slack
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_slack_and_salesforce" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Slack and Salesforce</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Bring CRM insights into Slack
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav_ul_level_3">
+                                                <!-- Column 4: Intelligence -->
+                                                <li class="nav_column">
+                                                    <div class="nav_parent_label">
+                                                        Intelligence
+                                                    </div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_features_ai" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Slack AI</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Save time and work smarter with AI
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_features_agentforce" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Agentforce</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Empower your team with AI-powered agents in slack
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_enterprise_platform" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Enterprise Platform</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Protect data, ensure compliance
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav_column">
+                                                    <div class="nav_parent_label">
+                                                        Enterprise Platform
+                                                    </div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_security_enterprise_platform" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Security
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Protect data, ensure compliance
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_ekm" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Enterprise Key Management
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Monitor and revoke access
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_atlas" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>Slack Atlas</div>
+                                                                </div>
+                                                                <div class="nav_link_sublabel">
+                                                                    Discover rich profiles and org charts
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Column 5: Featured -->
+                                                <li class="nav_column">
+                                                    <div class="nav_parent_label">
+                                                        Featured
+                                                    </div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_tour_slack_features" class="nav_story">
+                                                            <a href="">
+                                                                <div class="nav_story_content">
+                                                                    <img src="" alt="img">
+                                                                    <div class="nav_story_label">
+                                                                        Take a quick interactive tour of Slack
+                                                                    </div>
+                                                                    <div class="nav_story_sublabel">
+                                                                        Start the tour <i class="fa-solid fa-arrow-right"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_what_is_slack" class="nav_sidebar_label">
+                                                            <a href="">
+                                                                What is Slack
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_slack_vs_email" class="nav_sidebar_label">
+                                                            <a href="">
+                                                                Slack vs Email
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_accessibility" class="nav_sidebar_label">
+                                                            <a href="">
+                                                                Accessibility
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="nav_solutions" class="nav_parent nav_parent_l1">
+                            <button class="dropdown_button">
+                                <span class="nav_parent_label nav_parent_label_l1">
+                                    Solutions <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </button>
+                            <ul class="nav_ul_level_1">
+                                <li id="nav_solutions_main" class="nav_parent nav_parent_l2">
+                                    <ul class="nav_ul_level_2">
+                                        <li id="nav_solutions_main_top" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="nav_department" class="nav_parent nav_parent_l4">
+                                                    <div class="nav_parent_label nav_parent_label_l4">
+                                                        By Department
+                                                    </div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_engineering" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Engineering
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_it" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        IT
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_customer_service" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Customer Service
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_sales" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Sales
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_project_management" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Project Management
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_marketing" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Marketing
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_hr" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Human Resource
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_security_solutions" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Security
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="nav_industry" class="nav_parent nav_parent_l4">
+                                                    <div class="nav_parent_label nav_parent_label_l4"></div>
+                                                    <ul class="nav_ul_level_4">
+                                                        <li id="link_mae" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Manufacture, auto and energy
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_technology" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Technology
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_media" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Media
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_small_business" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Small Business
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_financial_services" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Financial Services
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_retail" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Retail
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_education" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Education
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li id="link_healthcare" class="nav_link nav_link_l5">
+                                                            <a href="">
+                                                                <div class="nav_link_label">
+                                                                    <div>
+                                                                        Health and Life Sciences
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="nav_solutions_main_bottom" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="solutions_get_demo" class="nav_cta">
+                                                    <a href="">
+                                                        Watch demo
+                                                    </a>
+                                                </li>
+                                                <li id="solutions_download_slack" class="nav_cta">
+                                                    <a href="">
+                                                        Download Slack
+                                                    </a>
+                                                </li>
+                                                <li id="solutions_see_all" class="nav_cta">
+                                                    <a href="">
+                                                        See all solutions
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="nav_solutions_side" class="nav_parent nav_parent_l2">
+                                    <div class="nav_parent_label nav_parent_label_l2">
+                                        Template gallery
+                                    </div>
+                                    <ul class="nav_ul_level_2">
+                                        <li id="nav_solutions_side_top" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="featured_story_solutions">
+                                                    <a href="">
+                                                        <div class="nav_story_content">
+                                                            <img src="" alt="img">
+                                                            <div class="nav_story_label">
+                                                                Start work faster with pre-made templates for every tasks.
+                                                            </div>
+                                                            <div class="nav_story_sublabel">
+                                                                See all templates <i class="fa-solid fa-arrow-right"></i>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="nav_solutions_side_bottom" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="link_task_management" class="nav_sidebar_label">
+                                                    <a class="nav_sidebar_link" href="">
+                                                        Task Management
+                                                    </a>
+                                                </li>
+                                                <li id="link_scale" class="nav_sidebar_label">
+                                                    <a class="nav_sidebar_link" href="">
+                                                        Scale
+                                                    </a>
+                                                </li>
+                                                <li id="link_engagement" class="nav_sidebar_label">
+                                                    <a class="nav_sidebar_link" href="">
+                                                        Engagement
+                                                    </a>
+                                                </li>
+                                                <li id="link_trust" class="nav_sidebar_label">
+                                                    <a class="nav_sidebar_link" href="">
+                                                        Trust
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="nav_enterprise" class="nav_parent nav_parent_l1">
+                            <a href="">
+                                <button class="dropdown_button">
+                                    <span class="nav_parent_label nav_parent_label_l1">
+                                        Enterprise
+                                    </span>
+                                </button>
+                            </a>
+                        </li>
+                        <li id="nav_resources" class="nav_parent nav_parent_l1">
+                            <button class="dropdown_button">
+                                <span class="nav_parent_label nav_parent_label_l1">
+                                    Resources <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </button>
+                            <ul class="nav_ul_level_1">
+                                <li id="nav_resources_main" class="nav_parent nav_parent_l2">
+                                    <ul class="nav_ul_level_2">
+                                        <li id="nav_resources_main_top" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="link_resources" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Resources Library
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_whats_new" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                What's new
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_tour_slack_resources" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Product Tour
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_events" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Events
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_developers" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Developers
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_partners" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Partners
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_customer_stories" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Customer Stories
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_community" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Community
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_slack_certified" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Slack Certified
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_blog" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Blog
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li id="link_app_directory" class="nav_link nav_link_l4">
+                                                    <a href="">
+                                                        <div class="nav_link_label">
+                                                            <div>
+                                                                Slack Marketplace
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="nav_resources_main_bottom" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="resources_get_demo" class="nav_cta">
+                                                    <a class="nav_cta_link" href="">
+                                                        Watch demo
+                                                    </a>
+                                                </li>
+                                                <li id="resources_dowmload_slack" class="nav_cta">
+                                                    <a class="nav_cta_link" href="">
+                                                        Download Slack
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="nav_resources_side" class="nav_parent nav_parent_l2">
+                                    <div class="nav_parent_label nav_parent_l2">
+                                        Featured
+                                    </div>
+                                    <ul class="nav_ul_level_2">
+                                        <li id="nav_resources_side_top" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="featured_story_resources" class="nav_story">
+                                                    <a href="">
+                                                        <div class="nav_story_content">
+                                                            <img src="" alt="nav_story_img" class="nav_story_img">
+                                                            <div class="nav_story_label">
+                                                                Trips and tricks on getting started with Slack
+                                                            </div>
+                                                            <div class="nav_story_sublabel">
+                                                                Get started <i class="fa-solid fa-arrow-right"></i>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="nav_resources_side_bottom" class="nav_parent nav_parent_l3">
+                                            <ul class="nav_ul_level_3">
+                                                <li id="link_help" class="nav_sidebar_label">
+                                                    <a class="nav_sidebar_link" href="">
+                                                        Help Center
+                                                    </a>
+                                                </li>
+                                                <li id="link_customer_support" class="nav_sidebar_label">
+                                                    <a class="nav_sidebar_link" href="">
+                                                        Customer Support
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- 
+                        <button class="dropdown_button">
+                                <span class="nav_parent_label nav_parent_label_l1">
+                                    Features <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </button>
+                        -->
+
+                        <li id="nav_pricing" class="nav_parent nav_parent_l1">
+                            <a href="">
+                                <button class="dropdown_button">
+                                    <span class="nav_parent_label nav_parent_label_l1">
+                                        Pricing
+                                    </span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                    <button id="nav_search_button">
+                        
+                    </button>
+                    <div class="search_form">
+
+                    </div>
+                    <div class="nav_next_submit hide_next_element">
+                        <a class="button" href="">
+                            <div>
+                                <!-- <input type="text" class="search_text"> -->
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav_signing_details">
+                        <a class="nav_signing_details_signed_out" href="">
+                            <div>Sign in</div>
+                        </a>
+                        <a class="nav_signing_details_request_a_demo" href="">
+                            REQUEST A DEMO
+                        </a>
+                        <a class="nav_signing_details_get_started" href="">
+                            <div class="nav_signing_details_get_started_text">GET STARTED</div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="billboard">
+            <div class="content-container headline_container">
+                <!-- <div class="where_work_happens">
+                    
+                </div> -->
+                <video title="Where work happens" class="where_work_happens video_headline" autoplay muted loop>
+                    <!-- <source src="hp-headline.en-GB@2x.webm"> -->
+                    <source src="hp-headline.en-GB@2x.mp4">
+                </video>
+                <div class="sign_up">
+                    <a class="sign_up_button primary" href="">
+                        Get started
+                    </a>
+                    <a class="sign_up_button secondary" href="">
+                        Fing your subscription <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <p><strong>Slack is free to try</strong> for as long as you like</p>
+                <section class="section_feature_companies">
+                    <div class="content-container text_center">
+                        <ul class="section_feature_companies_logos">
+                            <li class="logo_bar_item">
+                                <img class="lazyload" src="logo-airbnb-small@2x.png" alt="img_1">
+                            </li>
+                            <li class="logo_bar_item">
+                                <img class="lazyload" src="logo-nasa-small.png" alt="img_2">
+                            </li>
+                            <li class="logo_bar_item">
+                                <img class="lazyload" src="logo-uber-small.png" alt="img_3">
+                            </li>
+                            <li class="logo_bar_item">
+                                <img class="lazyload" src="logo-target-small.png" alt="img_4">
+                            </li>
+                            <li class="logo_bar_item">
+                                <img class="lazyload" src="logo-nyt-small@2x.png" alt="img_5">
+                            </li>
+                            <li class="logo_bar_item">
+                                <img class="lazyload" src="logo-etsy-small.png" alt="img_6">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="hero_illustration">
+                    <video height="644" width="900" class="box_shadow_simple" title="Team discussing work in the slack app" autoplay loop muted>
+                        <source type="video/webm" src="hero@2x.IN.webm">
+                        <source type="video/mp4" src="hero@2x.IN.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="value_props">
+            <div class="content-container value_props_header">
+                <h1 class="value_props_headline">
+                    Your people, projects, apps and AI, all on the world's most beloved work operating system.
+                </h1>
+                <div class="value_props_subheads">
+                    <div class="value_props_subhead">
+                        <div>
+                            <i class="fa-regular fa-handshake"></i> COLLABORATION
+                        </div>
+                    </div>
+                    <div class="value_props_subhead">
+                        <div>
+                            <i class="fa-regular fa-clipboard"></i> PROJECT MANAGEMENT
+                        </div>
+                    </div>
+                    <div class="value_props_subhead">
+                        <div>
+                            <i class="fa-solid fa-bolt"></i> INTEGRATIONS
+                        </div>
+                    </div>
+                    <div class="value_props_subhead">
+                        <div>
+                            <i class="fa-regular fa-star"></i> SLACK AI
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container value_props_content">
+                <div class="value_props_content_reduced_motion">
+                    <div class="value_props_card">
+                        <div class="value_props_card_text">
+                            <div class="value_props_card_text_top">
+                                <div class="value_props_card_text_header">
+                                    COLLABORATION
+                                </div>
+                                <div class="value_props_card_text_subheader">
+                                    Communicate in countless ways from one place.
+                                </div>
+                                <div class="value_props_card_text_main">
+                                    Slack is built for bringing peoplr and information together. Type things out. 
+                                    Talk things out. Invite external organisations into the conversation.
+                                </div>
+                            </div>
+                            <div class="value_props_card_text_bottom">
+                                <div class="value_props_card_text_number">
+                                    80%
+                                </div>
+                                <div class="value_props_card_text_number_info">
+                                    of the Fortune 100 use Slack Connect to work with partners and customers<sup>1</sup>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="value_props_card_asset">
+                            <div class="value_props_card_asset_content">
+                                <video class="value_props_card_asset_video">
+                                    <source type="video/webm" src="01-channels.IN@2x.webm">
+                                    <source type="video/mp4" src="01-channels.IN@2x.mp4">
+                                    <source type="video/webm" src="01-channels.IN.webm">
+                                    <source type="video/mp4" src="01-channels.IN.mp4">
+                                </video>
+                                <svg class="value_props_card_asset_decoration">
+                                    <path></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value_props_card">
+                        <div class="value_props_card_text">
+                            <div class="value_props_card_text_top">
+                                <div class="value_props_card_text_header">
+                                    Project Management
+                                </div>
+                                <div class="value_props_card_text_subheader">
+                                    Manage projects and move work forwards faster.
+                                </div>
+                                <div class="value_props_card_text_main">
+                                    Prioritise tasks, share ideas and stay aligned. Slack brings every piece 
+                                    of your project together from start to finish.
+                                </div>
+                            </div>
+                            <div class="value_props_card_text_bottom">
+                                <div class="value_props_card_text_number">
+                                    47%
+                                </div>
+                                <div class="value_props_card_text_number_info">
+                                    Increase in productivity for teams using Slack<sup>2</sup>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="value_props_card_asset">
+                            <div class="value_props_card_asset_content">
+                                <video class="value_props_card_asset_video">
+                                    <source type="video/webm" src="02-lists.IN@2x.webm">
+                                    <source type="video/mp4" src="02-lists.IN@2x.mp4">
+                                    <source type="video/webm" src="02-lists.IN.webm">
+                                    <source type="video/mp4" src="02-lists.IN.mp4">
+                                </video>
+                                <svg class="value_props_card_asset_decoration">
+                                    <path></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value_props_card">
+                        <div class="value_props_card_text">
+                            <div class="value_props_card_text_top">
+                                <div class="value_props_card_text_header">
+                                    Integrations
+                                </div>
+                                <div class="value_props_card_text_subheader">
+                                    Tap into the tools that you already use.
+                                </div>
+                                <div class="value_props_card_text_main">
+                                    Over 2,600 apps are ready to connect in Slack, so you can automate 
+                                    everyday tasks in the flow of work and save your team precious time.
+                                </div>
+                            </div>
+                            <div class="value_props_card_text_bottom">
+                                <div class="value_props_card_text_number">
+                                    35%
+                                </div>
+                                <div class="value_props_card_text_number_info">
+                                    increase in time saved due to automation for Slack users<sup>3</sup>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="value_props_card_asset">
+                            <div class="value_props_card_asset_content">
+                                <video class="value_props_card_asset_video">
+                                    <source type="video/webm" src="video-integrations-ui-02.IN.webm">
+                                    <source type="video/mp4" src="video-integrations-ui-02.IN.mp4">
+                                    <source type="video/webm" src="hp-vp-3.IN.webm">
+                                    <source type="video/mp4" src="hp-vp-3.IN.mp4">
+                                </video>
+                                <svg class="value_props_card_asset_decoration">
+                                    <path></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value_props_card">
+                        <div class="value_props_card_text">
+                            <div class="value_props_card_text_top">
+                                <div class="value_props_card_text_header">
+                                    Slack AI
+                                </div>
+                                <div class="value_props_card_text_subheader">
+                                    Do more with AI that works where you do.
+                                </div>
+                                <div class="value_props_card_text_main">
+                                    Search your entire company history for answers, instantly catch up 
+                                    on conversations and get daily recaps of messages missed.
+                                </div>
+                            </div>
+                            <div class="value_props_card_text_bottom">
+                                <div class="value_props_card_text_number_last">
+                                    97 mins
+                                </div>
+                                <div class="value_props_card_text_number_info">
+                                    average time that users can save weekly with Slack AI<sup>4</sup>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="value_props_card_asset">
+                            <div class="value_props_card_asset_content">
+                                <video class="value_props_card_asset_video">
+                                    <source type="video/webm" src="hp-vp-4.IN@2x.webm">
+                                    <source type="video/mp4" src="hp-vp-4.IN@2x.mp4">
+                                    <source type="video/webm" src="hp-vp-4.IN.webm">
+                                    <source type="video/mp4" src="hp-vp-4.IN.mp4">
+                                </video>
+                                <svg class="value_props_card_asset_decoration">
+                                    <path></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="value_props_content_animated">
+                    <div class="value_props_card_asset_content">
+                        <video class="value_props_card_asset_video" height="444" width="800" autoplay loop muted tabindex="0">  <!--tabindex="0" is used to make the ekement focusable-->
+                            <!--tabindex="0" is used to make the ekement focusable-->
+                            <source type="video/webm" src="01-channels.IN@2x.webm">
+                            <source type="video/mp4" src="01-channels.IN@2x.mp4">
+                            <source type="video/webm" src="01-channels.IN.webm">
+                            <source type="video/mp4" src="01-channels.IN.mp4">
+                        </video>
+                        <video class="value_props_card_asset_video" height="444" width="800" autoplay loop muted>
+                            <source type="video/webm" src="02-lists.IN@2x.webm">
+                            <source type="video/mp4" src="02-lists.IN@2x.mp4">
+                            <source type="video/webm" src="02-lists.IN.webm">
+                            <source type="video/mp4" src="02-lists.IN.mp4">
+                        </video>
+                        <video class="value_props_card_asset_video" height="444" width="800" autoplay loop muted>
+                            <source type="video/webm" src="video-integrations-ui-02.IN.webm">
+                            <source type="video/mp4" src="video-integrations-ui-02.IN.mp4">
+                            <source type="video/webm" src="hp-vp-3.IN.webm">
+                            <source type="video/mp4" src="hp-vp-3.IN.mp4">
+                        </video>
+                        <video class="value_props_card_asset_video" height="444" width="800" autoplay loop muted>
+                            <source type="video/webm" src="hp-vp-4.IN@2x.webm">
+                            <source type="video/mp4" src="hp-vp-4.IN@2x.mp4">
+                            <source type="video/webm" src="hp-vp-4.IN.webm">
+                            <source type="video/mp4" src="hp-vp-4.IN.mp4">
+                        </video>
+                        <svg class="value_props_card_asset_decoration">
+                            <path></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="nav_expanded_footer">
+        <div class="nav_expanded_footer_supermenu">
+            <a class="local_new_switcher" href="#">
+                <div>
+                    <i class="fa-solid fa-globe"></i> <span>Change region</span> <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </a>
+            <ul class="nav_social_list">
+                <li class="nav_social_list_item">
+                    <a href="https://www.linkedin.com/company/tiny-spec-inc/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="nav_social_list_item">
+                    <a href="https://www.instagram.com/slackhq/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav_social_list_item">
+                    <a href="https://facebook.com/slackhq">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav_social_list_item">
+                    <a href="https://twitter.com/slackhq">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav_social_list_item">
+                    <a href="https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="nav_social_list_item">
+                    <a href="https://www.tiktok.com/@slackhq">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav_expanded_footer_menu">
+            <a class="footer_slack_logo" href="http://127.0.0.1:5500/abc.html">
+                <img src="https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png" alt="Slack Logo">
+            </a>
+            <nav class="nav_expanded_footer_wrap">
+                <ul class="nav_ul_level_0">
+                    <li id="footer_product" class="nav_parent nav_parent_l1">
+                        <button class="dropdown_button">
+                            <span class="nav_parent_label nav_parent_label_l1">
+                                PRODUCT
+                            </span>
+                        </button>
+                        <ul class="nav_ul_level_1_footer">
+                            <li id="link_watch_demo_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Watch demo</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_pricing_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Pricing</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_paid_Vs_free_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Paid Vs Free</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_accessibility_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Accessibility</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_featured_releases_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Featured releases</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_change_log_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Change log</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_status_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Status</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="footer_why_slack" class="nav_parent nav_parent_l1">
+                        <button class="dropdown_button">
+                            <span class="nav_parent_label nav_parent_label_l1">
+                                WHY SLACK?
+                            </span>
+                        </button>
+                        <ul class="nav_ul_level_1_footer">
+                            <li id="link_slack_Vs_email_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack Vs mail</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_enterprise_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Enterprise</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_small_business_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Small business</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_productivity_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Productivity</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_task_management_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Task management</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_scale_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Scale</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_trust_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Trust</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="footer_features" class="nav_parent nav_parent_l1">
+                        <button class="dropdown_button">
+                            <span class="nav_parent_label nav_parent_label_l1">
+                                FEATURES
+                            </span>
+                        </button>
+                        <ul class="nav_ul_level_1_footer">
+                            <li id="link_channels_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Channels</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_slack_connect_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack connect</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_workflow_builder_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Workflow Builder</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_messaging_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Messaging</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_huddles_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Huddles</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_canvas_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Canvas</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_lists_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Lists</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_clips_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Clips</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_search_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Search</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_apps_&_integrations_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Apps & integrations</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_file_sharing_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>File sharing</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_slack_ai_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack AI</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_security_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Security</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_enterprise_key_management_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Enterprise key management</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_slack_atlas_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack atlas</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_see_all_features_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>See all features</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="footer_solutions" class="nav_parent nav_parent_l1">
+                        <button class="dropdown_button">
+                            <span class="nav_parent_label nav_parent_label_l1">
+                                SOLUTIONS
+                            </span>
+                        </button>
+                        <ul class="nav_ul_level_1_footer">
+                            <li id="link_engineering_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Engineering</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_it_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>IT</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_customer_service_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Customer service</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_sales_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Sales</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_project_management_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Project management</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_marketing_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Marketing</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_security_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Security</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_manufacture_auto_and_energy_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Manufacture, auto and energy</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_technology_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Technology</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_media_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Media</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_financial_services_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Financial services</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_retail_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Retail</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_public_sector_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Public sector</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_education_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Education</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_health_and_life_sciences_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Health and life sciences</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_see_all_solutions_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>See all solutions</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="footer_resources" class="nav_parent nav_parent_l1">
+                        <button class="dropdown_button">
+                            <span class="nav_parent_label nav_parent_label_l1">
+                                RESOURCES
+                            </span>
+                        </button>
+                        <ul class="nav_ul_level_1_footer">
+                            <li id="link_help_center_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Help center</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_whats_new_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>What's new</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_resources_library_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Resources library</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_clack_blog_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack blog</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_community_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Community</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_customer_stories_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Customer stories</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_events_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Events</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_developers_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Developers</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_partners_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Partners</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_partner_offer_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Partner offers</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_slack_marketplace_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack Marketplace</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link_slack_certified_footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack Certified</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="footer_company" class="nav_parent nav_parent_l1">
+                        <button class="dropdown_button">
+                            <span class="nav_parent_label nav_parent_label_l1">
+                                COMPANY
+                            </span>
+                        </button>
+                        <ul class="nav_ul_level_1_footer">
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>About Us</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>News</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Media kit</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Brand center</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Careers</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Slack shop</div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Engineering blog</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Design blog</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="link__footer" class="nav_link nav_link_l2">
+                                <a href="">
+                                    <div class="nav_link_label">
+                                        <div>Contact us</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav_expanded_footer_submenu">
+            <div class="nav_legal_links">
+                <a class="download_slack_link" href="https://slack.com/intl/en-in/get">
+                    Download Slack <img src="download.svg" alt="download_logo">
+                </a>
+                <ul class="nav_legal_list">
+                    <li>
+                        <a href="">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="">Terms</a>
+                    </li>
+                    <li>
+                        <a href="">Cookie preferences</a>
+                    </li>
+                    <li>
+                        <a class="privacy_choice" href="">
+                            <span>Your privacy choices</span>
+                            <img src="ccpa.svg" alt="ccpa_logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_legal_text">
+                ©2024 Slack Technologies, LLC, a Salesforce company. All rights reserved. 
+                Various trademarks held by their respective owners.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
